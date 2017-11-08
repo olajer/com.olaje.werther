@@ -10,7 +10,7 @@
     <platform name="android">
         <preference name="AndroidLaunchMode" value="singleTop"/>
         <preference name="android-minSdkVersion" value="14" />   
-        <icon src="img/playstore-icon.png" />       
+        <icon src="playstore-icon.png" />       
         <icon density="ldpi" src="img/ldpi/icon.png" />
         <icon density="mdpi" src="img/mdpi/icon.png" />
         <icon density="hdpi" src="img/hdpi/icon.png"  />
