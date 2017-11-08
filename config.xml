@@ -10,13 +10,13 @@
     <platform name="android">
         <preference name="AndroidLaunchMode" value="singleTop"/>
         <preference name="android-minSdkVersion" value="14" />   
-        <icon src="playstore-icon.png" />       
-        <icon density="ldpi" src="img/ldpi/icon.png" />
-        <icon density="mdpi" src="img/mdpi/icon.png" />
-        <icon density="hdpi" src="img/hdpi/icon.png"  />
-        <icon density="xhdpi" src="img/xhdpi/icon.png" />
-        <icon density="xxhdpi" src="img/xxhdpi/icon.png" />
-        <icon density="xxxhdpi" src="img/xxxhdpi/icon.png" />
+        <icon src="res/playstore-icon.png" />       
+        <icon density="ldpi" src="res/drawable-ldpi/icon.png" />
+        <icon density="mdpi" src="res/drawable-mdpi/icon.png" />
+        <icon density="hdpi" src="res/drawable-hdpi/icon.png"  />
+        <icon density="xhdpi" src="res/drawable-xhdpi/icon.png" />
+        <icon density="xxhdpi" src="res/drawable-xxhdpi/icon.png" />
+        <icon density="xxxhdpi" src="res/drawable-xxxhdpi/icon.png" />
     </platform>    
     <content src="index.html" />
     <access origin="*" />
