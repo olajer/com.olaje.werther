@@ -1,0 +1,24 @@
+<ion-view >
+  <ion-content overflow-scroll="true" class="padding" ng-controller="EscalasCtrl">
+  	<strong>Guía Práctica Para la Detección del Riesgo Suicida en Personas Mayores</strong>
+    <div class="card">
+        <div class="item item-text-wrap">
+            <strong>Puntos: {{total}}</strong>
+            <hr/>
+            <span ng-show="total>9"> La persona mayor debe ser remitida a una unidad psiquiátrica para ser examinada por profesional especializado</span>
+        </div>          
+    </div>   
+	<ion-list>
+	  <ion-checkbox ng-model="pmayor.a.seleccionado" ng-click="getTotalMayor()">Vive solo/a</ion-checkbox>
+	  <ion-checkbox ng-model="pmayor.b.seleccionado" ng-click="getTotalMayor()">Padece una enfermedad física que ha requerido ingresos frecuentes y tratamientos prolongados</ion-checkbox>
+	  <ion-checkbox ng-model="pmayor.c.seleccionado" ng-click="getTotalMayor()">Padece una enfermedad mental</ion-checkbox>
+	  <ion-checkbox ng-model="pmayor.d.seleccionado" ng-click="getTotalMayor()">Tiene antecedentes personales de conducta suicida</ion-checkbox>
+	  <ion-checkbox ng-model="pmayor.e.seleccionado" ng-click="getTotalMayor()">Posee antecedentes familiares de dicha conducta</ion-checkbox>
+	  <ion-checkbox ng-model="pmayor.f.seleccionado" ng-click="getTotalMayor()">Actitud poco cooperadora en la entrevista</ion-checkbox>
+	  <ion-checkbox ng-model="pmayor.h.seleccionado" ng-click="getTotalMayor()">Expresa deseos de descansar de todo, no dar más trabajo a otros, no hacer falta a otros</ion-checkbox>
+	  <ion-checkbox ng-model="pmayor.i.seleccionado" ng-click="getTotalMayor()">Manifiesta ideas suicidas</ion-checkbox>
+	  <ion-checkbox ng-model="pmayor.j.seleccionado" ng-click="getTotalMayor()">Cambios de conducta en forma de aislamiento, agresividad, agitación, llanto frecuente de pocos días de evolución</ion-checkbox>
+	  <ion-checkbox ng-model="pmayor.j.seleccionado" ng-click="getTotalMayor()">Negarse a recibir ayuda por considerar que es inútil a pesar de mantener una actitud adecuada en la entrevista</ion-checkbox>
+	</ion-list>
+  </ion-content>
+</ion-view>

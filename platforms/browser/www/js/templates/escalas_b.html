@@ -1,0 +1,24 @@
+<ion-view >
+  <ion-content overflow-scroll="true" class="padding" ng-controller="EscalasCtrl">
+  	<strong>Guía Práctica Para la Detección del Riesgo Suicida en la Adolescencia</strong>
+    <div class="card">
+        <div class="item item-text-wrap">
+            <strong>Puntos: {{total}}</strong>
+            <hr/>
+            <span ng-show="total>12"> El adolescente debe ser trasladado a un servicio de psiquiatría infantojuvenil para su hospitalización y, de no ser posible, requerirá de una valoración inmediata por el especialista en psiquiatría del equipo de salud mental del área.</span>
+        </div>          
+    </div>   
+	<ion-list>
+	  <ion-checkbox ng-model="adolescente.a.seleccionado" ng-click="getTotalAdolescentes()">Provenir de un hogar roto</ion-checkbox>
+	  <ion-checkbox ng-model="adolescente.b.seleccionado" ng-click="getTotalAdolescentes()">Progenitores portadores de enfermedad mental</ion-checkbox>
+	  <ion-checkbox ng-model="adolescente.c.seleccionado" ng-click="getTotalAdolescentes()">Antecedentes familiares de comportamiento suicida</ion-checkbox>
+	  <ion-checkbox ng-model="adolescente.d.seleccionado" ng-click="getTotalAdolescentes()">Historia de trastornos del aprendizaje, fugas de la escuela, inadaptación a becas o régimen militar</ion-checkbox>
+	  <ion-checkbox ng-model="adolescente.e.seleccionado" ng-click="getTotalAdolescentes()">Antecedentes personales de conducta de autodestrucción</ion-checkbox>
+	  <ion-checkbox ng-model="adolescente.f.seleccionado" ng-click="getTotalAdolescentes()">Cambios evidentes en el comportamiento habitual</ion-checkbox>
+	  <ion-checkbox ng-model="adolescente.h.seleccionado" ng-click="getTotalAdolescentes()">Amigos con conducta suicida</ion-checkbox>
+	  <ion-checkbox ng-model="adolescente.i.seleccionado" ng-click="getTotalAdolescentes()">Presencia de ideación suicida y sus variantes (gestos, amenazas, plan suicida)</ion-checkbox>
+	  <ion-checkbox ng-model="adolescente.j.seleccionado" ng-click="getTotalAdolescentes()">Antecedentes personales de enfermedad mental</ion-checkbox>
+	  <ion-checkbox ng-model="adolescente.j.seleccionado" ng-click="getTotalAdolescentes()">Conflicto actual (familiar, pareja, escuela, etc.)</ion-checkbox>
+	</ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,25 @@
+<ion-view >
+  <ion-content overflow-scroll="true" class="padding" ng-controller="EscalasCtrl">
+  	<strong>Guía Práctica Para la Detección del Riesgo Suicida en la Niñez</strong>
+    <div class="card">
+        <div class="item item-text-wrap">
+            <strong>Puntos: {{total}}</strong>
+            <hr/>
+            <span ng-show="total>0 && total<12"> El niño/a debe ser evaluado por equipo de salud mental</span>
+            <span ng-show="total>12"> El niño/a debe ser hospitalizado en el servicio de psiquiatría infanto-adolescente</span>
+        </div>          
+    </div>   
+	<ion-list>
+	  <ion-checkbox ng-model="nino.a.seleccionado" ng-click="getTotalNinos()">Padres demasiado jóvenes o demasiado maduros</ion-checkbox>
+	  <ion-checkbox ng-model="nino.b.seleccionado" ng-click="getTotalNinos()">Dificultades en la captación y control prenatal</ion-checkbox>
+	  <ion-checkbox ng-model="nino.c.seleccionado" ng-click="getTotalNinos()">Enfermedad psiquiátrica de los padres</ion-checkbox>
+	  <ion-checkbox ng-model="nino.d.seleccionado" ng-click="getTotalNinos()">Niño/a poco cooperador en la consulta</ion-checkbox>
+	  <ion-checkbox ng-model="nino.e.seleccionado" ng-click="getTotalNinos()">Niño/a que manifiesta cambios en su comportamiento</ion-checkbox>
+	  <ion-checkbox ng-model="nino.f.seleccionado" ng-click="getTotalNinos()">Violencia en el hogar y sobre el niño/a</ion-checkbox>
+	  <ion-checkbox ng-model="nino.g.seleccionado" ng-click="getTotalNinos()">Antecedentes familiares de conducta suicida (padres, hermanos, abuelos) o amigos con dicha conducta</ion-checkbox>
+	  <ion-checkbox ng-model="nino.h.seleccionado" ng-click="getTotalNinos()">Antecedentes personales de auto-destrucción</ion-checkbox>
+	  <ion-checkbox ng-model="nino.i.seleccionado" ng-click="getTotalNinos()">Manifestaciones desagradables de los progenitores en relación con el niño/a</ion-checkbox>
+	  <ion-checkbox ng-model="nino.j.seleccionado" ng-click="getTotalNinos()">Situación conflictiva actual (hogar roto recientemente, pérdidas, fracasos escolares, etc.)</ion-checkbox>
+	</ion-list>
+  </ion-content>
+</ion-view>

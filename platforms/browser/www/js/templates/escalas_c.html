@@ -1,0 +1,26 @@
+<ion-view >
+  <ion-content overflow-scroll="true" class="padding" ng-controller="EscalasCtrl">
+  	<strong>Guía Práctica Para la Detección del Riesgo Suicida en el Adulto</strong>
+    <div class="card">
+        <div class="item item-text-wrap">
+            <strong>Puntos: {{total}}</strong>
+            <hr/>
+            <span ng-show="total>18">La persona debe ser hospitalizada</span>
+            <span ng-show="total>=10 && total<=18">La persona debe ser hospitalizada</span>
+            <span ng-show="total>0 && total<10"> persona debe ser evaluada por equipo de salud con experiencia en salud mental</span>
+        </div>          
+    </div>   
+	<ion-list>
+	  <ion-checkbox ng-model="adulto.a.seleccionado" ng-click="getTotalAdultos()">Provenir de un hogar roto</ion-checkbox>
+	  <ion-checkbox ng-model="adulto.b.seleccionado" ng-click="getTotalAdultos()">Progenitores portadores de enfermedad mental</ion-checkbox>
+	  <ion-checkbox ng-model="adulto.c.seleccionado" ng-click="getTotalAdultos()">Antecedentes familiares de comportamiento suicida</ion-checkbox>
+	  <ion-checkbox ng-model="adulto.d.seleccionado" ng-click="getTotalAdultos()">Historia de trastornos del aprendizaje, fugas de la escuela, inadaptación a becas o régimen militar</ion-checkbox>
+	  <ion-checkbox ng-model="adulto.e.seleccionado" ng-click="getTotalAdultos()">Antecedentes personales de conducta de autodestrucción</ion-checkbox>
+	  <ion-checkbox ng-model="adulto.f.seleccionado" ng-click="getTotalAdultos()">Cambios evidentes en el comportamiento habitual</ion-checkbox>
+	  <ion-checkbox ng-model="adulto.h.seleccionado" ng-click="getTotalAdultos()">Amigos con conducta suicida</ion-checkbox>
+	  <ion-checkbox ng-model="adulto.i.seleccionado" ng-click="getTotalAdultos()">Presencia de ideación suicida y sus variantes (gestos, amenazas, plan suicida)</ion-checkbox>
+	  <ion-checkbox ng-model="adulto.j.seleccionado" ng-click="getTotalAdultos()">Antecedentes personales de enfermedad mental</ion-checkbox>
+	  <ion-checkbox ng-model="adulto.j.seleccionado" ng-click="getTotalAdultos()">Conflicto actual (familiar, pareja, escuela, etc.)</ion-checkbox>
+	</ion-list>
+  </ion-content>
+</ion-view>
